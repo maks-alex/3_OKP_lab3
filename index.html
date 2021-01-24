@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+<!-- Заменить шрифты? -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">   
+    
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Lab 3. CSS Layouts. Animations</title>
+</head>
+
+<body>
+    <header>
+        <div class="upeer-head">
+            <nav class="main-menu">
+                <button class="menu-button">
+                    Про компанію
+                </button>
+                <button class="menu-button">
+                    Автомобілі
+                </button>
+                <button class="menu-button">
+                    Сервіс
+                </button>
+
+                <!-- <ul class="main-menu-list">
+                    <li class="main-menu-item">
+                        <a class="main-menu-item-link" href="/company">
+                            <span class="main-menu-item-title">
+                                Про компанію
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="main-menu-item-link" href="/autos">
+                            <span class="main-menu-item-title">
+                                Автомобілі
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="main-menu-item-link" href="/service">
+                            <span class="main-menu-item-title">
+                                Сервіс
+                            </span>
+                        </a>
+                    </li>
+                </ul> -->
+
+            </nav>
+            <div class="upper-right">
+                <div class="search" >
+                    <input type="text" placeholder="Що вас цікавить?">
+                    <button>
+                        Пошук
+                    </button>
+                </div>
+                <div class= "porsche-group">
+                    <span >
+                        Porsche <br> Group
+                    </span>
+                </div>
+            </div>
+        </div>
+<!-- Этот SVG взял с сайта VW -->
+        <div class="bottom-head">
+            <div class="vw6-rootDomainMaster__rightTopLink">
+                <div class="vw6-themeRightTopLinks" data-width="100%">
+                </div>
+            </div>
+            <div class="vw6-rootDomainMaster__logoRow">
+                <div class="vw6-rootDomainMaster__lineBefore">
+                </div>
+                <div class="vw6-rootDomainMaster__logo">
+                    <a class="vw6-rootDomainMaster__logo__link" href="/ ">
+                    </a>
+                    <div class="vw6-themeLogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="285" viewBox="0 0 800 285">
+                        <path fill="#001E50" d="M141.9,0C63.4,0,0,63.4,0,141.9s63.4,141.9,141.9,141.9s141.9-63.4,141.9-141.9S220.4,0,141.9,0z M141.9,13.1
+                        c14.7,0,28.9,2.6,42,7.3l-40.4,90.8c-0.4,0.8-0.8,1.6-1.6,1.6s-1.2-0.8-1.6-1.6L99.9,20.4C113,15.7,127.2,13.1,141.9,13.1z
+                        M270.3,141.9c0,70.6-57.8,128.8-128.4,128.8S13.5,212.4,13.5,141.9c0-15.9,2.8-30.9,8.1-45l75.1,151.2c1,2,2.2,3.6,4.6,3.6
+                        c2.4,0,3.7-1.6,4.6-3.6l34.5-77.5c0.4-0.8,0.8-1.6,1.6-1.6s1.2,0.8,1.6,1.6l34.5,77.5c0.9,2,2.2,3.6,4.6,3.6s3.6-1.6,4.6-3.6
+                        l75.1-151.2C267.5,111,270.3,126,270.3,141.9z M184.5,204.3c-0.4,0.8-0.8,1.6-1.6,1.6s-1.2-0.8-1.6-1.6L156.8,148
+                        c-0.8-2-2-2.4-3.6-2.4h-22.6c-1.6,0-2.8,0.4-3.6,2.4l-24.6,56.3c-0.4,0.8-0.8,1.6-1.6,1.6c-0.8,0-1.2-0.8-1.6-1.6L33.9,72.5
+                        c11.7-17.8,27.4-32.9,46.2-43.4l47,104.6c0.8,2,2,2.4,3.6,2.4h22.6c1.6,0,2.8-0.4,3.6-2.4l47-104.6c18.8,10.5,34.5,25.6,46.2,43.4
+                        L184.5,204.3z M410.3,131.9c11.9,0,18-8.2,18-18.1s-6.2-18.1-18-18.1c-11.7,0-18,8.2-18,18.1S398.6,131.9,410.3,131.9z M410.3,103.5
+                        c5,0,8.3,3.4,8.3,10.3c0,6.9-3.3,10.3-8.3,10.3c-4.9,0-8.2-3.4-8.2-10.3C402.1,106.9,405.4,103.5,410.3,103.5z M359.6,130.8h-9.8
+                        V82.7h9.8V106h0.1l17.5-23.3h10.9v0.7l-18.4,23.8l19.3,22.8v0.7h-11.5l-17.9-21.5h-0.1V130.8z M707.6,96.7h9.5v34.1h-9.5V96.7z
+                        M706.8,85.6c0-3,2.2-5.2,5.5-5.2c3.4,0,5.6,2.2,5.6,5.2c0,3-2.2,5.2-5.6,5.2C709,90.8,706.8,88.6,706.8,85.6z M701.3,154.9
+                        c0,3-2.2,5.2-5.6,5.2c-3.3,0-5.5-2.2-5.5-5.2s2.2-5.2,5.5-5.2C699.1,149.6,701.3,151.8,701.3,154.9z M629.1,85.3l3-4.5
+                        c2.5,1.8,5.5,2.4,9.3,2.4c4,0,6.9-0.5,9.4-2.4l3,4.5c-2.5,3.6-6.4,5.4-12.4,5.4C635.4,90.7,631.6,88.9,629.1,85.3z M444.6,130.8
+                        h-9.3V96.7h9l10.7,17.7h0.1l10.7-17.7h9v34.1h-9.3v-19.5h-0.1l-6.6,11.4h-7.6l-6.5-11.4h-0.1V130.8z M605.7,85.6
+                        c0-3,2.2-5.2,5.5-5.2c3.4,0,5.6,2.2,5.6,5.2c0,3-2.2,5.2-5.6,5.2C607.8,90.8,605.7,88.6,605.7,85.6z M690.9,166h9.5v34.1h-9.5V166z
+                        M606.4,96.7h9.5v34.1h-9.5V96.7z M591.2,130.8h-27.9V96.7h9.3v26.9h13.2V96.7h9.3v26.9h4.9l-1.4,15.7h-6.4L591.2,130.8z
+                        M499.5,131.9c5.4,0,10.4-1.3,13.8-2.9l-2.2-6.9c-3.3,1.2-6.9,2.1-10.9,2.1c-5.1,0-8.2-2.9-8.6-7.7h22.8c0.2-1.2,0.5-4,0.5-6.2
+                        c0-8-4.9-14.7-15.9-14.7c-11.1,0-17,8.3-17,18C482,123.8,487.7,131.9,499.5,131.9z M499.1,102.6c5.4,0,7.1,3.1,7.1,6.9
+                        c0,0.4,0,0.7-0.1,1.1h-14.5C491.9,106.5,494.3,102.6,499.1,102.6z M635.3,130.8h-10.5V96.7h9.3v21.4h0.2L647,96.7h10.5v34.1h-9.3
+                        v-21.4H648L635.3,130.8z M563.1,165c-11.7,0-18,8.2-18,18.1c0,9.9,6.3,18.1,18,18.1c11.9,0,18-8.2,18-18.1
+                        C581.1,173.2,575,165,563.1,165z M563.1,193.3c-4.9,0-8.2-3.4-8.2-10.3c0-6.9,3.3-10.3,8.2-10.3c5,0,8.3,3.4,8.3,10.3
+                        C571.4,189.9,568.1,193.3,563.1,193.3z M529.1,166h9v34.1h-9.3v-19.5h-0.1l-6.6,11.4h-7.6l-6.5-11.4h-0.1v19.5h-9.3V166h9l10.7,17.7
+                        h0.1L529.1,166z M473.5,165c-11.7,0-18,8.2-18,18.1c0,9.9,6.3,18.1,18,18.1c11.9,0,18-8.2,18-18.1C491.5,173.2,485.4,165,473.5,165z
+                        M473.5,193.3c-4.9,0-8.2-3.4-8.2-10.3c0-6.9,3.3-10.3,8.2-10.3c5,0,8.3,3.4,8.3,10.3C481.8,189.9,478.5,193.3,473.5,193.3z
+                        M607.8,168.2c-5.1,0-9,2-11.2,4.5h-0.3c0.2-7.3,1.6-11.5,8.8-12.9c4.4-0.8,13.3-0.8,16.1-1.6v-8.6c-3.1,0.6-13.6,0.9-19,2.1
+                        c-10.8,2.3-15.2,10.1-15.2,29.1c0,12.8,5.9,20.4,18,20.4c11.9,0,17.9-7.6,17.9-16.7C623,174.9,617.5,168.2,607.8,168.2z
+                        M605.2,193.3c-5.1,0-8.3-3.5-8.3-8.8s3.2-8.4,8.3-8.4c5,0,8.1,3,8.1,8.4S610.1,193.3,605.2,193.3z M630.3,166h9.5v34.1h-9.5V166z
+                        M556.1,113.8c0-9.9-5-18.1-14.9-18.1c-5,0-8.6,2.3-10.9,4.1h-0.1l-1.3-3h-7v48.1h9.5v-16.5h0.1c2.2,1.5,4.9,3.5,9.7,3.5
+                        C551.1,131.9,556.1,123.7,556.1,113.8z M538.3,124c-2.5,0-5.1-0.9-6.9-2.1v-16.4c1.8-1.1,4.4-2.1,6.9-2.1c5.7,0,8.1,4.2,8.1,10.3
+                        S543.9,124,538.3,124z M377.2,192.7v-13.9c0-8.8-4.8-13.8-14.6-13.8c-5.3,0-10.5,1.4-14.1,3l2.3,7.3c3.3-1.5,7.6-2.5,11.3-2.5
+                        c2.1,0,5.8,0.6,5.8,4.9v1.6h-4.6c-12,0-16.8,3.6-16.8,11.2c0,6.2,3.9,10.7,11.5,10.7c4.2,0,8.7-2.3,11-4.2h0.1c1.2,2.6,3.1,4,6.8,4
+                        c2.1,0,3.5-0.2,5-0.5V194h-2.5C377.3,194,377.2,193.8,377.2,192.7z M367.9,191.3c-2,1.4-5.3,2.3-7.8,2.3c-2.9,0-4.5-1.3-4.5-4.1
+                        c0-2.5,2.4-4.2,8.7-4.2h3.6V191.3z M689.4,130.8v-13.3h-13.7v13.3h-9.3V96.7h9.3v13.4h13.7V96.7h9.3v34.1H689.4z M653.6,166H682
+                        v34.1h-9.3v-26.8h-10.5l-0.8,9.5c-1.1,14.6-6.1,17.8-15.6,17.8v-7.7c3.8,0,6.4-1.6,7-10.9L653.6,166z M640.7,154.9
+                        c0,3-2.2,5.2-5.6,5.2c-3.3,0-5.5-2.2-5.5-5.2s2.2-5.2,5.5-5.2C638.5,149.6,640.7,151.8,640.7,154.9z M421.9,166h29.6v7.3h-10.3v26.8
+                        H432v-26.8h-10.1V166z M417.7,190.5c0,6.7-4.7,9.6-13.2,9.6h-17.4V166h16.7c7.6,0,12.4,2.8,12.4,9.2c0,4.2-2.2,6.2-4.7,7.4v0.1
+                        C414.9,183.8,417.7,186.3,417.7,190.5z M396.3,179.8h5.3c4.3,0,5.1-1.6,5.1-3.5c0-1.8-0.7-3.6-5.1-3.6h-5.3V179.8z M408.3,189.6
+                        c0-2.1-1.1-3.8-5.1-3.8h-6.9v7.6h6.9C407.2,193.3,408.3,191.6,408.3,189.6z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="vw6-rootDomainMaster__lineAfter">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <form class="filter">
+        <h1>
+            Фільтр моделей
+        </h1>
+        <!-- <div class=filter-container></div> -->
+            <input type="checkbox" id="check1">
+            <label for="check1">Мінівен</label>
+            
+            
+            <input type="checkbox" id="check2">
+            <label for="check2">Пасажирський фургон</label>
+            
+            
+            <input type="checkbox" id="check3">
+            <label for="check3">Вантажний фургон</label>
+
+            <input type="checkbox" id="check4">
+            <label for="check4">Пікап</label>
+    </form>
+<!--         
+        <div class=filter-list>
+            <label class="filter">
+                <input type="checkbox" value="Мінівен">
+                <span>
+                    Мінівен
+                </span>
+            </label>
+            <label class="filter">
+                <input type="checkbox" value="Мінівен">
+                <span>
+                    Пасажирський фургон
+                </span>
+            </label>
+            <label class="filter">
+                <input type="checkbox" value="Мінівен">
+                <span>
+                    Вантажний фургон
+                </span>
+            </label>
+            <label class="filter">
+                <input type="checkbox" value="Мінівен">
+                <span>
+                    Пікап
+                </span>
+            </label>
+        </div> -->
+
+
+<!-- 
+        <nav class=options>
+            <ul class="options-list">
+                <li class="options-list-item">
+                    <a class="options-list-item-link" href="/">
+                        <span class="options-list-item-link-title">
+                            Колір (перелік кольорів)
+                        </span>
+                    </a>
+                </li>
+                <li class="options-list-item">
+                    <a class="options-list-item-link" href="/">
+                        <span class="options-list-item-link-title">
+                            Коробка передач (автоматична/механічна)
+                        </span>
+                    </a>
+                </li>
+                <li class="options-list-item">
+                    <a class="options-list-item-link" href="/">
+                        <span class="options-list-item-link-title">
+                            ABS (да/ні)
+                        </span>
+                    </a>
+                </li>
+                <li class="options-list-item">
+                    <a class="options-list-item-link" href="/">
+                        <span class="options-list-item-link-title">
+                            Вид пального (бензин/дизель)
+                        </span>
+                    </a>
+                </li>
+                <li class="options-list-item">
+                    <a class="options-list-item-link" href="/">
+                        <span class="options-list-item-link-title">
+                            Двигун (1,5 (120 к.с.)/2,0 (180 к.с.)/2,5 (220 к.с.)/1,5d (150 к.с.)/1,9d (200 к.с.))
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+         -->
+    </div>
+    <main>
+        <h1>
+            Комерційні автомобілі
+        </h1>
+        <div class="cars-container">
+                <div class="product-cell">
+                    <a class="product-link" href="Amarok">
+                        <img src="pictures/cars/Amarok.png" alt="Amarok">
+                    </a>
+                        <div class="wrapper">
+                            <div class="col-feature">потужність двигуна</div>
+                            <div class="col-feature-value">до 220 к.с.</div>
+                            <div class="col-feature">витрати пального</div>
+                            <div class="col-feature-value">від 9 л/100км</div>
+                            <div class="price">від 950 000 грн</div>
+                            <div class="view">
+                                <a class="product-link-view" href="Amarok">
+                                    До огляду
+                                </a>
+                            </div>
+                        </div>
+
+<!-- 
+                        <span class="product-name">
+                            Від 950 000 грн
+                        </span>
+                         -->
+
+                </div>
+                <div class="product-cell">
+                    <a class="product-link" href="Caddy-Combi">
+                        <img src="pictures/cars/Caddy-Combi.png" alt="Caddy-Combi">
+                    </a>
+                    <div class="wrapper">
+                        <div class="col-feature">потужність двигуна</div>
+                        <div class="col-feature-value">до 220 к.с.</div>
+                        <div class="col-feature">витрати пального</div>
+                        <div class="col-feature-value">від 9 л/100км</div>
+                        <div class="price">від 750 000 грн</div>
+                        <div class="view">
+                            <a class="product-link-view" href="Caddy-Combi">
+                                До огляду
+                            </a>
+                        </div>
+                    </div>
+
+                        <!-- <span class="product-name">
+                            Від 750 000 грн
+                        </span> -->
+
+                </div>
+                <div class="product-cell">
+                    <a class="product-link" href="Caravelle">
+                        <img src="pictures/cars/Caravelle.png" alt="Caravelle">
+                    </a>
+                    <div class="wrapper">
+                        <div class="col-feature">потужність двигуна</div>
+                        <div class="col-feature-value">до 220 к.с.</div>
+                        <div class="col-feature">витрати пального</div>
+                        <div class="col-feature-value">від 9 л/100км</div>
+                        <div class="price">від 1 500 000 грн</div>
+                        <div class="view">
+                            <a class="product-link-view" href="Caravelle">
+                                До огляду
+                            </a>
+                        </div>
+                    </div>
+
+                        <!-- <span class="product-name">
+                            Від 1 500 000 грн
+                        </span> -->
+
+                </div>
+                <div class="product-cell">
+                    <a class="product-link" href="Crafter_Kasten">
+                        <img src="pictures/cars/Crafter_Kasten.png" alt="Crafter_Kasten">
+                    </a>
+                    <div class="wrapper">
+                        <div class="col-feature">потужність двигуна</div>
+                        <div class="col-feature-value">до 220 к.с.</div>
+                        <div class="col-feature">витрати пального</div>
+                        <div class="col-feature-value">від 9 л/100км</div>
+                        <div class="price">від 800 000 грн</div>
+                        <div class="view">
+                            <a class="product-link-view" href="Crafter_Kasten">
+                                До огляду
+                            </a>
+                        </div>
+                    </div>
+
+                        <!-- <span class="product-name">
+                            Від 800 000 грн
+                        </span> -->
+                </div>
+
+                <div class="product-cell">
+                    <a class="product-link" href="Crafter_Kasten">
+                        <img src="pictures/cars/Crafter.png" alt="Crafter_Kasten">
+                    </a>
+                    <div class="wrapper">
+                        <div class="col-feature">потужність двигуна</div>
+                        <div class="col-feature-value">до 220 к.с.</div>
+                        <div class="col-feature">витрати пального</div>
+                        <div class="col-feature-value">від 9 л/100км</div>
+                        <div class="price">від 700 000 грн</div>
+                        <div class="view">
+                            <a class="product-link-view" href="Crafter_Kasten">
+                                До огляду
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-cell">
+                    <a class="product-link" href="Multivan">
+                        <img src="pictures/cars/Multivan.png" alt="Multivan">
+                    </a>
+                    <div class="wrapper">
+                        <div class="col-feature">потужність двигуна</div>
+                        <div class="col-feature-value">до 220 к.с.</div>
+                        <div class="col-feature">витрати пального</div>
+                        <div class="col-feature-value">від 9 л/100км</div>
+                        <div class="price">від 1 700 000 грн</div>
+                        <div class="view">
+                            <a class="product-link-view" href="Multivan">
+                                До огляду
+                            </a>
+                        </div>
+                    </div>
+
+                        <!-- <span class="product-name">
+                            Від 1 700 000 грн
+                        </span> -->
+
+                </div>
+                <div class="product-cell">
+                    <a class="product-link" href="Transporter-Combi">
+                        <img src="pictures/cars/Transporter-Combi.png" alt="Transporter-Combi">
+                    </a>
+                    <div class="wrapper">
+                        <div class="col-feature">потужність двигуна</div>
+                        <div class="col-feature-value">до 220 к.с.</div>
+                        <div class="col-feature">витрати пального</div>
+                        <div class="col-feature-value">від 9 л/100км</div>
+                        <div class="price">від 1 200 000 грн</div>
+                        <div class="view">
+                            <a class="product-link-view" href="Transporter-Combi">
+                                До огляду
+                            </a>
+                        </div>
+                    </div>
+
+<!--                     
+                        <span class="product-name">
+                            Від 1 200 000 грн
+                        </span> -->
+
+                </div>
+
+        </div>
+    </main>
+    <div class = "fixed">
+        <div class = "account-actions">
+            <div class = "actions-bar">
+    
+                <a class = "action-link" href = "/account">
+                <div class = "action" id = "account">
+                    <span class = "action-title">Склад автомобілів</span>
+                    <img src = "pictures/position_fixed/stock.png" alt = "stock">
+                </div>
+                </a>
+    
+                <a class = "action-link" href = "/wishlist">
+                <div class = "action" id = "wishist">
+                    <img src = "pictures/position_fixed/dealer.png" alt = "dealer">
+                    <span class = "action-title">Карта дилерів</span>
+                </div>
+                </a>
+    
+                <a class = "action-link" href = "/cart">
+                <div class = "action" id = "shopping-cart">
+                    <img src = "pictures/position_fixed/service.png" alt = "service">
+                    <span class = "action-title">Сервісні станції</span>
+                </div>
+                </a>
+            </div>
+        </div>
+ 
+
+
+                <script></script>
+</body>
+</html>
