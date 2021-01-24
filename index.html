@@ -65,6 +65,7 @@
             </div>
         </div>
 <!-- Этот SVG взял с сайта VW -->
+<!-- 
         <div class="bottom-head">
             <div class="vw6-rootDomainMaster__rightTopLink">
                 <div class="vw6-themeRightTopLinks" data-width="100%">
@@ -123,6 +124,7 @@
                 </div>
             </div>
         </div>
+         -->
     </header>
 
     <form class="filter">
@@ -216,33 +218,28 @@
          -->
     </div>
     <main>
-        <h1>
+        <h2>
             Комерційні автомобілі
-        </h1>
+        </h2>
+
+        
         <div class="cars-container">
                 <div class="product-cell">
                     <a class="product-link" href="Amarok">
                         <img src="pictures/cars/Amarok.png" alt="Amarok">
                     </a>
-                        <div class="wrapper">
-                            <div class="col-feature">потужність двигуна</div>
-                            <div class="col-feature-value">до 220 к.с.</div>
-                            <div class="col-feature">витрати пального</div>
-                            <div class="col-feature-value">від 9 л/100км</div>
-                            <div class="price">від 950 000 грн</div>
-                            <div class="view">
-                                <a class="product-link-view" href="Amarok">
-                                    До огляду
-                                </a>
-                            </div>
+                    <div class="wrapper">
+                        <div class="col-feature">потужність двигуна</div>
+                        <div class="col-feature-value">до 220 к.с.</div>
+                        <div class="col-feature">витрати пального</div>
+                        <div class="col-feature-value">від 9 л/100км</div>
+                        <div class="price">від 950 000 грн</div>
+                        <div class="view">
+                            <a class="product-link-view" href="Amarok">
+                                До огляду
+                            </a>
                         </div>
-
-<!-- 
-                        <span class="product-name">
-                            Від 950 000 грн
-                        </span>
-                         -->
-
+                    </div>
                 </div>
                 <div class="product-cell">
                     <a class="product-link" href="Caddy-Combi">
@@ -260,11 +257,6 @@
                             </a>
                         </div>
                     </div>
-
-                        <!-- <span class="product-name">
-                            Від 750 000 грн
-                        </span> -->
-
                 </div>
                 <div class="product-cell">
                     <a class="product-link" href="Caravelle">
@@ -282,11 +274,6 @@
                             </a>
                         </div>
                     </div>
-
-                        <!-- <span class="product-name">
-                            Від 1 500 000 грн
-                        </span> -->
-
                 </div>
                 <div class="product-cell">
                     <a class="product-link" href="Crafter_Kasten">
@@ -304,12 +291,7 @@
                             </a>
                         </div>
                     </div>
-
-                        <!-- <span class="product-name">
-                            Від 800 000 грн
-                        </span> -->
                 </div>
-
                 <div class="product-cell">
                     <a class="product-link" href="Crafter_Kasten">
                         <img src="pictures/cars/Crafter.png" alt="Crafter_Kasten">
@@ -327,9 +309,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
                 <div class="product-cell">
                     <a class="product-link" href="Multivan">
                         <img src="pictures/cars/Multivan.png" alt="Multivan">
@@ -346,11 +325,6 @@
                             </a>
                         </div>
                     </div>
-
-                        <!-- <span class="product-name">
-                            Від 1 700 000 грн
-                        </span> -->
-
                 </div>
                 <div class="product-cell">
                     <a class="product-link" href="Transporter-Combi">
@@ -368,45 +342,178 @@
                             </a>
                         </div>
                     </div>
-
-<!--                     
-                        <span class="product-name">
-                            Від 1 200 000 грн
-                        </span> -->
-
                 </div>
 
         </div>
     </main>
-    <div class = "fixed">
-        <div class = "account-actions">
-            <div class = "actions-bar">
+
+
+    <div class = "fixed-right-bar">
+        <div class = "right-bar">
+            <div class = "right-bar-list">
     
-                <a class = "action-link" href = "/account">
-                <div class = "action" id = "account">
+                <a class = "right-bar-item-link" href = "/stock">
+                <div class = "right-bar-list-item" id = "stock">
                     <span class = "action-title">Склад автомобілів</span>
                     <img src = "pictures/position_fixed/stock.png" alt = "stock">
                 </div>
                 </a>
     
-                <a class = "action-link" href = "/wishlist">
-                <div class = "action" id = "wishist">
+                <a class = "right-bar-item-link" href = "/dealer">
+                <div class = "right-bar-list-item" id = "dealer">
                     <img src = "pictures/position_fixed/dealer.png" alt = "dealer">
                     <span class = "action-title">Карта дилерів</span>
                 </div>
                 </a>
     
-                <a class = "action-link" href = "/cart">
-                <div class = "action" id = "shopping-cart">
+                <a class = "right-bar-item-link" href = "/service">
+                <div class = "right-bar-list-item" id = "service">
                     <img src = "pictures/position_fixed/service.png" alt = "service">
                     <span class = "action-title">Сервісні станції</span>
                 </div>
                 </a>
+
             </div>
         </div>
- 
+    </div>
+
+    <div class="gallery">
+        <h2>
+            Галерея:
+        </h2>
+        <p><img id="largeImg" src="pictures/cars/Amarok.png" alt="Large image"></p>
+
+        <ul id="thumbs">
+          <!-- браузер показывает небольшую встроенную подсказку из атрибута "title" при наведении курсора на текст -->
+          <li>
+            <a href="pictures/cars/Amarok.png" title="Amarok">
+              <img class="gallery-pictures" src="pictures/cars/Amarok.png"></a>
+          </li>
+          <li>
+            <a href="pictures/cars/Caddy-Combi.png" title="Caddy-Combi">
+              <img class="gallery-pictures" src="pictures/cars/Caddy-Combi.png"></a>
+          </li>
+          <li>
+            <a href="pictures/cars/Caravelle.png" title="Caravelle">
+              <img class="gallery-pictures" src="pictures/cars/Caravelle.png"></a>
+          </li>
+          <li>
+            <a href="pictures/cars/Crafter.png" title="Crafter">
+              <img class="gallery-pictures" src="pictures/cars/Crafter.png"></a>
+          </li>
+          <li>
+            <a href="pictures/cars/Crafter_Kasten.png" title="Crafter_Kasten">
+              <img class="gallery-pictures" src="pictures/cars/Crafter_Kasten.png"></a>
+          </li>
+          <li>
+            <a href="pictures/cars/Multivan.png" title="Multivan">
+              <img class="gallery-pictures" src="pictures/cars/Multivan.png"></a>
+          </li>
+          <li>
+            <a href="pictures/cars/Transporter-Combi.png" title="Transporter-Combi">
+              <img class="gallery-pictures" src="pictures/cars/Transporter-Combi.png"></a>
+          </li>
+        </ul>
+    </div>
+    
 
 
-                <script></script>
+
+
+    <footer>
+        <nav class = "footer-menu">
+
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Volkswagen Комерційні автомобілі</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "/news">
+                        <span class = "footer-category-item-title">Новини бренду</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "/stock">
+                        <span class = "footer-category-item-title">Склад авто</span>
+                    </a>
+                </li>
+            </ul>
+        
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Підтримка</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "/info">
+                        <span class = "footer-category-item-title">Volkswagen Комерційні автомобілі в Україні</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "/dealers">
+                        <span class = "footer-category-item-title">Контакти дилера</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Сервіс</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "/loan">
+                        <span class = "footer-category-item-title">Кредит</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "/leasing">
+                        <span class = "footer-category-item-title">Лізинг</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "/trade-in">
+                        <span class = "footer-category-item-title">Trade-in</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Соціальні мережі</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "https://www.facebook.com/vwnfzua/">
+                        <span class = "footer-category-item-title">Facebook</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "https://www.youtube.com/channel/UCI3IKtfhRAIgVA0GreY13rQ">
+                        <span class = "footer-category-item-title">YouTube</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "https://www.instagram.com/vwcommercial_ua/?hl=ru">
+                        <span class = "footer-category-item-title">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </footer> 
+
+
+    <script>
+        thumbs.onclick = function(event) {
+          let thumbnail = event.target.closest('a');
+    
+          if (!thumbnail) return;
+          showThumbnail(thumbnail.href, thumbnail.title);
+          event.preventDefault();
+        }
+    
+        function showThumbnail(href, title) {
+          largeImg.src = href;
+          largeImg.alt = title;
+        }
+      </script>
 </body>
 </html>
