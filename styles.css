@@ -55,11 +55,11 @@ header {
 }
 
 .head-logo {
-    height: 100px;
+    height: 90px;
 }
 
 .head-logo-picture{
-    height: 90%;
+    height: 100%;
     object-fit: cover;
 }
 
